@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+#header {
+    padding: 15px 0px;
+}
+
+#header a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#main-nav ul {
+    display: flex;
+    justify-content: space-between;
+}
