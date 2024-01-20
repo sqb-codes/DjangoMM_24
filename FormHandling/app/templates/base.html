@@ -36,6 +36,21 @@
         </div>
     </header>
 
+    <section id="search">
+        <div class="container">
+            <form action="{% url 'search' %}" method="GET">
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="text" placeholder="Search product" name="query" class="w-100 form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="submit" class="btn btn-danger w-50" value="Search">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <div class="container">
         {% block content %}
         {% endblock %}

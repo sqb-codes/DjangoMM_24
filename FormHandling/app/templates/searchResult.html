@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <section id="section_1" class="mt-5">
+        <h2>Search Results for {{query}}</h2>
+        <hr>
+        <div class="row">
+            {% for product in products %}
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="{{product.p_image}}" class="w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.p_name}}</h5>
+                        <p class="card-text">Price : {{product.p_price}}</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+
+{% endblock %}

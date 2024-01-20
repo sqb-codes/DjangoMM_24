@@ -23,5 +23,7 @@ urlpatterns = [
     path('', views.index, name=''),
     path('login/', views.login, name='login'),
     path('register/', views.register, name='register'),
-    path('registerUser/', views.registerUser, name='registerUser')
+    path('registerUser/', views.registerUser, name='registerUser'),
+    path('search/', views.searchResult, name='search'),
+    path('productDetails/<int:pk>', views.productDetails, name='productDetails')
 ]
